@@ -1,12 +1,12 @@
 <?php
-# php -f wp.php /home/USER/PATH/wp-config.php
-
 define('CRLF', "\n");
 
 $sapi_type = php_sapi_name();
 if($sapi_type != 'cli')
 {
-	error("Use command line call only.");
+	header("Content-Type: text/plain");
+	usage();
+	error("Call me from command line only.", -1);
 }
 
 if(!isset($argv))
@@ -19,20 +19,21 @@ $wp_config_file = isset($argv[1])?$argv[1]:'wp-config.php';
 if(empty($wp_config_file))
 {
 	usage();
-	error("Pass Full Path to WP Config.", -1);
+	error("Pass Full Path to WP Config.", -2);
 }
 
 if(!is_file($wp_config_file))
 {
 	usage();
-	error("WP config file not found.", -2);
+	error("WP config file not found.", -3);
 }
 
 function usage()
 {
 	echo "
 Usage:
-php config.php ./wp-config.php
+php -f config.php ./wp-config.php
+wp /home/USER/PROJECT/public_html/wp-config.php
 ";
 }
 
