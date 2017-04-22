@@ -12,8 +12,8 @@ General usage
 
 Grabs WordPress configuration file
 
- * `wp ./wp-config.php`
- * `wp /home/user/public_html/wp-config.php`
+ * `bin/wp ./wp-config.php`
+ * `bin/wp /home/user/public_html/wp-config.php`
 
 
 ## Output
