@@ -1,7 +1,7 @@
 ## Setup
 
 ```
-git clone https://github.com/bimalpoudel/grab-configs.git
+git clone https://github.com/anytizer/grab-configs.git
 chmod -R 755 grab-configs/wp
 
 ```
