@@ -1,2 +1,2 @@
 @echo off
-php -f ../config.php ../wordpress/wp-config.php
+php -f ../src/wp-config.php ../wordpress/wp-config.php

@@ -1,2 +1,2 @@
 #!/bin/bash
-php -f ../src/config.php $1
+php -f ../src/wp-config.php $1
