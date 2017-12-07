@@ -1,5 +1,5 @@
 <?php
-define('CRLF', "\n");
+define("CRLF", "\n");
 
 $sapi_type = php_sapi_name();
 if($sapi_type != 'cli')

@@ -17,6 +17,7 @@ Grabs WordPress configuration file
 
 
 ## Output
+Echoes the shell script to make a backup.
 
 ```
 mysql -hlocalhost -uUSERNAME -pPASSWORD DATABASE
